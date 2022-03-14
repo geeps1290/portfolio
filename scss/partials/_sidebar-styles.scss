@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+#sidebar {
+    display: inline;
+}
+
+#sidebar-wrapper {
+    width: 200px;
+    height: 100%;
+}
+
+#sidebar ul {
+    list-style: none;
+}

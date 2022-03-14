@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+/* ====== Temporary styling =======*/
+
+* {
+    outline: 1px solid red !important;
+}
+
+/* ======== Body styling =========*/
+
+body {
+    box-sizing: border-box;
+    display: block;
+}
