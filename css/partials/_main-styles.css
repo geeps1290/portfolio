@@ -1,11 +1,14 @@
 @charset "UTF-8";
+/* ======== Page colors ======== */
+/* ======== Viewport widths ======== */
+/* XS: no media queries as this is default when developing (mobile first, aim to make sure this works from 280px and above)*/
 /* ========================
      Icomoons Fonts
 ======================== */
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?fm4ifg");
-  src: url("fonts/icomoon.eot?fm4ifg#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?fm4ifg") format("truetype"), url("fonts/icomoon.woff?fm4ifg") format("woff"), url("fonts/icomoon.svg?fm4ifg#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?fm4ifg");
+  src: url("../fonts/icomoon.eot?fm4ifg#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?fm4ifg") format("truetype"), url("../fonts/icomoon.woff?fm4ifg") format("woff"), url("../fonts/icomoon.svg?fm4ifg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +16,7 @@
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: never;
+  /*   speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -49,9 +52,10 @@
 }
 
 /* ====== Temporary styling =======*/
-/* * {
-    outline: 1px solid red !important;
-} */
+* {
+  outline: 1px solid red !important;
+}
+
 /* ======== Body styling =========*/
 body {
   -webkit-box-sizing: border-box;
@@ -61,6 +65,7 @@ body {
   padding: 0px 10px;
   font-family: "Source Sans Pro", sans-serif;
   font-family: "Work Sans", sans-serif;
+  background-color: #F1F1F1;
 }
 
 h1 {

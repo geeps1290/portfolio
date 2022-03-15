@@ -1,13 +1,15 @@
 @use '../abstracts' as *;
 
-#banner-text {
-    text-align: center;
+header {
+    background: url(../images/cornwall.jpg) center / cover no-repeat, linear-gradient(to bottom right, $slate-blue, $darkest-grey);
+    background-blend-mode: normal;
+    height: 600px;
+    margin: -10px;
 }
 
-#banner-image {
-    background-image: url(../../images/cornwall.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-    background-size: cover;
+#banner-text {
+    text-align: right;
+    padding: 200px 40px;
+    color: #fff;
+    text-shadow: 1px 1px 2px $darkest-grey;
 }

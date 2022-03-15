@@ -2,9 +2,9 @@
 
 /* ====== Temporary styling =======*/
 
-/* * {
+* {
     outline: 1px solid red !important;
-} */
+}
 
 /* ======== Body styling =========*/
 
@@ -15,6 +15,7 @@ body {
     padding: 0px 10px;
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    background-color: $white-grey;
 }
 
 h1 {

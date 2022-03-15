@@ -10,6 +10,7 @@
     background-color: $slate-blue;
     overflow-x: hidden;
     padding-top: 20px;
+    margin: 0;
 }
   
 .sidenav a {
@@ -28,6 +29,10 @@
 }
 
 .sidenav a:hover {
-    color: $white-grey;
+    color: #fff;
+}
+
+.socials span {
+    display: inline;
 }
 
