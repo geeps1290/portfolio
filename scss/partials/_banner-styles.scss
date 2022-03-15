@@ -5,5 +5,9 @@
 }
 
 #banner-image {
-    width: 100%;
+    background-image: url(../../images/cornwall.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    background-size: cover;
 }

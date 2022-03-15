@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* ======== Page colors ======== */
 /* ========================
      Icomoons Fonts
 ======================== */
@@ -24,59 +26,106 @@
 }
 
 .icon-menu:before {
-  content: "\e909";
+  content: "";
 }
 
 .icon-magnifying-glass:before {
-  content: "\e902";
+  content: "";
 }
 
 .icon-code:before {
-  content: "\e900";
+  content: "";
 }
 
 .icon-arrow-right2:before {
-  content: "\ea3c";
+  content: "";
 }
 
 .icon-github:before {
-  content: "\eab0";
+  content: "";
 }
 
 .icon-linkedin2:before {
-  content: "\eaca";
+  content: "";
 }
 
 /* ====== Temporary styling =======*/
-* {
-  outline: 1px solid red !important;
-}
-
+/* * {
+    outline: 1px solid red !important;
+} */
 /* ======== Body styling =========*/
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
+  margin-left: 160px;
+  padding: 0px 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
+h1 {
+  font-weight: 400;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* ======== Media Queries =========*/
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
 #banner-text {
   text-align: center;
 }
 
 #banner-image {
-  width: 100%;
+  background-image: url(../../images/cornwall.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  background-size: cover;
 }
 
-#sidebar {
-  display: inline;
-}
-
-#sidebar-wrapper {
-  width: 200px;
+.sidenav {
   height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3F678B;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-#sidebar ul {
-  list-style: none;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #CED1D7;
+  display: block;
 }
 
+.sidenav a:first-child {
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 15px 25px 35px;
+}
+
+.sidenav a:hover {
+  color: #F1F1F1;
+}
 /*# sourceMappingURL=style.css.map */

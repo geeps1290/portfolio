@@ -48,16 +48,34 @@
   content: "";
 }
 
-#sidebar {
-  display: inline;
-}
-
-#sidebar-wrapper {
-  width: 200px;
+.sidenav {
   height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3F678B;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-#sidebar ul {
-  list-style: none;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #CED1D7;
+  display: block;
+}
+
+.sidenav a:first-child {
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 25px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 /*# sourceMappingURL=_sidebar-styles.css.map */

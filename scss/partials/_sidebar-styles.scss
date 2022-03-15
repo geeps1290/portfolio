@@ -1,14 +1,33 @@
 @use '../abstracts' as *;
 
-#sidebar {
-    display: inline;
-}
-
-#sidebar-wrapper {
-    width: 200px;
+.sidenav {
     height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $slate-blue;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: $light-grey;
+    display: block;
 }
 
-#sidebar ul {
-    list-style: none;
+.sidenav a:first-child {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 15px 25px 35px;
 }
+
+.sidenav a:hover {
+    color: $white-grey;
+}
+

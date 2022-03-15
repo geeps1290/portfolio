@@ -47,42 +47,4 @@
 .icon-linkedin2:before {
   content: "";
 }
-
-/* ====== Temporary styling =======*/
-/* * {
-    outline: 1px solid red !important;
-} */
-/* ======== Body styling =========*/
-body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
-  margin-left: 160px;
-  padding: 0px 10px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-family: "Work Sans", sans-serif;
-}
-
-h1 {
-  font-weight: 400;
-  font-size: 2.7rem;
-  text-transform: uppercase;
-}
-
-p {
-  font-weight: 300;
-  font-size: 1.3rem;
-  font-style: italic;
-}
-
-/* ======== Media Queries =========*/
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-/*# sourceMappingURL=_main-styles.css.map */
+/*# sourceMappingURL=_icomoons.css.map */
