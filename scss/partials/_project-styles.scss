@@ -9,12 +9,25 @@
 
 .projects-container {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .projects-card {
+    box-sizing: border-box;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     padding: 20px;
     margin: 8px;
     border-radius: 4px;
+    @media screen and (max-width: $small){
+        flex-shrink: 3;
+        max-width: 80vw;
+    }
+}
+
+.projects-card img {
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
 }

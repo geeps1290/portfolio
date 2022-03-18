@@ -21,15 +21,24 @@ body {
 h1 {
     display: block;
     font-weight: 400;
+    color: $darkest-grey;
     text-transform: uppercase;
     @media screen and (max-width: $small) {
         font-size: 8vw;
     }
 }
 
+h3 {
+    display: block;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+}
+
 p {
     display: block;
     font-weight: 300;
+    color: $darkest-grey;
     font-style: italic;
     @media screen and (max-width: $small) {
         font-size: 5vw;
@@ -38,9 +47,9 @@ p {
 
 header {
     display: block;
-    width: auto;
+    width: 100%;
+    height: 100vh;
     top: 0;
-    overflow-x: hidden;
     @media screen and (min-width: $small) {
         width: 100%;
         position: relative;
@@ -51,7 +60,6 @@ header {
     display: block;
     width: 100%;
     top: 0;
-    overflow-x: hidden;
     @media screen and (min-width: $small) {
         width: calc(100vw - 160px);
         position: relative;
