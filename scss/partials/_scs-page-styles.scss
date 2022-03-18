@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.about-scs-scheme .heading h1 {
+    margin-top: 30px;
+}
+
+.text-container {
+    background-color: $white-grey;
+    padding: 20px;
+}
+
+.content-block {
+    margin: 50px 10px 60px;
+}
