@@ -2,32 +2,61 @@
 
 /* ====== Temporary styling =======*/
 
-* {
+/* * {
     outline: 1px solid red !important;
-}
+} */
 
 /* ======== Body styling =========*/
 
 body {
     box-sizing: border-box;
     display: block;
-    margin-left: 160px;
-    padding: 0px 10px;
+    width: auto;
+    height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Work Sans', sans-serif;
     background-color: $white-grey;
 }
 
 h1 {
+    display: block;
     font-weight: 400;
-    font-size: 2.7rem;
     text-transform: uppercase;
+    @media screen and (max-width: $small) {
+        font-size: 8vw;
+    }
 }
 
 p {
+    display: block;
     font-weight: 300;
-    font-size: 1.3rem;
     font-style: italic;
+    @media screen and (max-width: $small) {
+        font-size: 5vw;
+    }
+}
+
+header {
+    display: block;
+    width: auto;
+    top: 0;
+    overflow-x: hidden;
+    @media screen and (min-width: $small) {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.page-content {
+    display: block;
+    width: 100%;
+    top: 0;
+    overflow-x: hidden;
+    @media screen and (min-width: $small) {
+        width: calc(100vw - 160px);
+        position: relative;
+        left: 160px;
+    }
 }
 
 /* ======== Media Queries =========*/

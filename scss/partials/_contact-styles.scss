@@ -1,1 +1,46 @@
 @use '../abstracts' as *;
+
+.contact {
+    display: block;
+    position: relative;
+    background-color: $light-grey;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.contact-form {
+    box-sizing: border-box;
+    display: block;
+    background-color: $light-grey;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input[type=text], select, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid $light-blue;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: small;
+}
+  
+input[type=submit] {
+    background-color: $slate-blue;
+    color: $light-grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: small;
+}
+  
+input[type=submit]:hover {
+    color: $white-grey;
+}
+
+label {
+    font-size: small;
+}

@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+
+.projects {
+    display: block;
+    position: relative;
+    padding: 20px;
+    background-color: $white-grey;
+}
+
+.projects-container {
+    display: flex;
+}
+
+.projects-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 20px;
+    margin: 8px;
+    border-radius: 4px;
+}
