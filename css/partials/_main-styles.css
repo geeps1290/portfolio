@@ -64,18 +64,21 @@ body {
   height: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-family: "Work Sans", sans-serif;
+  line-height: 1.4rem;
   background-color: #F1F1F1;
 }
 
 h1 {
   display: block;
   font-weight: 400;
+  line-height: 2.2rem;
   color: #181B23;
   text-transform: uppercase;
 }
 @media screen and (max-width: 576px) {
   h1 {
     font-size: 8vw;
+    line-height: 2.6rem;
   }
 }
 
@@ -94,9 +97,17 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  display: block;
+  font-weight: 400;
+  color: #181B23;
+  text-shadow: 0.7px 0.7px 0.7px #939396;
+}
+
 p {
   display: block;
   font-weight: 300;
+  line-height: 2rem;
   color: #181B23;
   font-style: italic;
 }
@@ -130,22 +141,20 @@ header {
   }
 }
 
-.heading {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 10px 40px 20px;
-  background-color: #82a2bf;
-  -webkit-box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), inset 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), inset 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ul {
+  list-style: none;
 }
-.heading h1, .heading p {
-  color: #fff;
-  text-shadow: 1px 1px 2px #181B23;
+
+strong {
+  display: block;
+  font-weight: 600;
+  color: black;
+  color: #181B23;
+  font-style: normal;
 }
-@media screen and (min-width: 576px) {
-  .heading {
-    padding: 10px 40px 20px 80px;
+@media screen and (max-width: 576px) {
+  strong {
+    font-size: 5vw;
   }
 }
 
@@ -160,6 +169,27 @@ header {
     position: relative;
     left: 160px;
   }
+}
+
+.about-section .heading h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.heading {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #82a2bf;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px inset, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px inset, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px inset;
+  margin: 0px;
+  padding: 40px;
+  text-align: center;
+}
+
+.heading h1, .heading p {
+  color: white;
+  text-shadow: #181b23 1px 1px 2px;
 }
 
 /* ======== Media Queries =========*/

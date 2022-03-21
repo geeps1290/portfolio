@@ -15,16 +15,19 @@ body {
     height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    line-height: 1.4rem;
     background-color: $white-grey;
 }
 
 h1 {
     display: block;
     font-weight: 400;
+    line-height: 2.2rem;
     color: $darkest-grey;
     text-transform: uppercase;
     @media screen and (max-width: $small) {
         font-size: 8vw;
+        line-height: 2.6rem;
     }
 }
 
@@ -43,9 +46,18 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    display: block;
+    font-weight: 400;
+    color: $darkest-grey;
+    text-shadow: 0.7px 0.7px 0.7px $mid-grey;
+
+}
+
 p {
     display: block;
     font-weight: 300;
+    line-height: 2rem;
     color: $darkest-grey;
     font-style: italic;
     @media screen and (max-width: $small) {
@@ -75,18 +87,18 @@ header {
     }
 }
 
-.heading {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 10px 40px 20px;
-    background-color: $light-blue;
-    box-shadow: inset 0 4px 8px 0 rgb(0 0 0 / 20%), inset 0 6px 20px 0 rgb(0 0 0 / 19%);
-    h1, p {
-        color: #fff;
-        text-shadow: 1px 1px 2px $darkest-grey;
-    }
-    @media screen and (min-width: $small) {
-        padding: 10px 40px 20px 80px; 
+ul {
+    list-style: none;
+}
+
+strong {
+    display: block;
+    font-weight: 600;
+    color: black;
+    color: $darkest-grey;
+    font-style: normal;
+    @media screen and (max-width: $small) {
+        font-size: 5vw;
     }
 }
 
@@ -99,6 +111,25 @@ header {
         position: relative;
         left: 160px;
     }
+}
+
+.about-section .heading h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.heading {
+    box-sizing: border-box;
+    background-color: rgb(130, 162, 191);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px inset, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px inset;
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+}
+
+.heading h1, .heading p {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(24, 27, 35) 1px 1px 2px;
 }
 
 /* ======== Media Queries =========*/

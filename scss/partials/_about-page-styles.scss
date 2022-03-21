@@ -8,3 +8,12 @@
 .content-block {
     margin: 50px 10px 60px;
 }
+
+h3 {
+    color: $slate-blue;
+    font-weight: 600;
+}
+
+.professional-interests ul, .additional-information ul {
+    list-style: circle;
+}
