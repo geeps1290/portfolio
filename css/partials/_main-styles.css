@@ -111,11 +111,6 @@ p {
   color: #181B23;
   font-style: italic;
 }
-@media screen and (max-width: 576px) {
-  p {
-    font-size: 5vw;
-  }
-}
 
 a {
   text-decoration: none;
@@ -190,6 +185,12 @@ strong {
 .heading h1, .heading p {
   color: white;
   text-shadow: #181b23 1px 1px 2px;
+}
+
+@media screen and (max-width: 576px) {
+  .banner-text p {
+    font-size: 5vw;
+  }
 }
 
 /* ======== Media Queries =========*/
