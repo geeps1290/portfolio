@@ -6,12 +6,22 @@
 }
 
 .text-container {
+    margin-top: 30px;
     background-color: $white-grey;
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
+    @media screen and (min-width: $small){
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .content-block {
-    margin: 50px 10px 60px;
+    margin-top: 80px;
+}
+
+.sub-block {
+    margin-top: 40px;
 }
 
 h3 {

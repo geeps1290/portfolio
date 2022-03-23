@@ -27,6 +27,14 @@
     }
 }
 
+.projects-card:hover {
+    background-color: $light-blue;
+}
+
+.projects-card:hover h3 {
+    color: #fff;
+}
+
 .projects-card img {
     width: 100%;
     padding-left: auto;
