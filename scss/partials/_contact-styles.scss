@@ -44,3 +44,11 @@ input[type=submit]:hover {
 label {
     font-size: small;
 }
+
+#contact a {
+    color: $slate-blue;
+}
+
+#contact a:hover {
+    color: $white-grey;
+}

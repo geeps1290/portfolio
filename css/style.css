@@ -283,7 +283,7 @@ strong {
   right: 0;
   z-index: 1;
   background-color: #3F678B;
-  color: #CED1D7;
+  color: #b1b1bc;
   overflow-x: hidden;
   text-align: center;
   font-size: 1.6rem;
@@ -295,6 +295,10 @@ strong {
   .icon-menu {
     display: none;
   }
+}
+
+.icon-menu:hover {
+  color: #fff;
 }
 
 .sidenav {
@@ -322,7 +326,7 @@ strong {
 
 .sidenav a {
   text-decoration: none;
-  color: #CED1D7;
+  color: #b1b1bc;
 }
 
 .nav-anchors {
@@ -331,15 +335,15 @@ strong {
 
 .nav-anchors a {
   display: block;
+  text-align: center;
   font-size: 15px;
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px;
 }
 
 .nav-anchors a:first-child {
   font-size: 50px;
-  text-align: center;
   letter-spacing: 5px;
-  padding: 15px 25px 45px;
+  padding: 25px 25px 55px 30px;
 }
 
 .sidenav a:hover {
@@ -368,18 +372,18 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
+  padding: 20px 20px 20px 15px;
 }
 
 .socials a {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 0px 7px;
 }
 
 #contact {
   display: block;
   position: relative;
-  background-color: #CED1D7;
+  background-color: #b1b1bc;
   padding: 30px;
   overflow: hidden;
 }
@@ -388,7 +392,7 @@ hr {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
-  background-color: #CED1D7;
+  background-color: #b1b1bc;
   padding: 30px;
   border-radius: 5px;
 }
@@ -407,7 +411,7 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: #3F678B;
-  color: #CED1D7;
+  color: #b1b1bc;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -421,6 +425,14 @@ input[type=submit]:hover {
 
 label {
   font-size: small;
+}
+
+#contact a {
+  color: #3F678B;
+}
+
+#contact a:hover {
+  color: #F1F1F1;
 }
 
 #projects {
