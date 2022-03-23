@@ -12,8 +12,11 @@
     box-sizing: border-box;
     display: block;
     background-color: $light-grey;
-    padding: 30px;
+    padding: 20px 0px;
     border-radius: 5px;
+    @media screen and (min-width: $small){
+        padding: 30px;
+    }
 }
 
 input[type=text], select, textarea {
@@ -24,7 +27,7 @@ input[type=text], select, textarea {
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 25px;
-    font-size: small;
+    font-size: 1rem;
 }
   
 input[type=submit] {
@@ -34,7 +37,7 @@ input[type=submit] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: small;
+    font-size: 1rem;
 }
   
 input[type=submit]:hover {
@@ -42,7 +45,7 @@ input[type=submit]:hover {
 }
 
 label {
-    font-size: small;
+    font-size: 1rem;
 }
 
 #contact a {
