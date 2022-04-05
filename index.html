@@ -48,7 +48,7 @@
         <div class="banner">
             <div class="banner-text">
                 <h1>My name is Georgina Pickworth</h1>
-                <p>I am a web developer</p>
+                <p id="banner-tagline">I am a web developer</p>
             </div>
             <div class="burger-menu">
                 <span class="icon-menu"></span>
@@ -93,11 +93,17 @@
             <div class="contact-form">
                 <form action="#">
                 
-                    <label for="fname">First Name</label>
+                    <label for="fname">First name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your first name...">
                 
-                    <label for="lname">Last Name</label>
+                    <label for="lname">Last name</label>
                     <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+                    <label for="pnumber">Phone number</label>
+                    <input type="text" id="pnumber" name="pnumber" placeholder="Your phone number..." class="notValid">
+
+                    <label for="emailAd">Email</label>
+                    <input type="text" id="emailAd" name="emailAd" placeholder="Your email address...">
                 
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
@@ -110,6 +116,8 @@
         </div>
     </div>
 
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

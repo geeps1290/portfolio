@@ -54,6 +54,18 @@
     }
 }
 
+.banner-text span {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+.banner-text span.fade {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .icon-menu {
     box-sizing: border-box;
     display: block;

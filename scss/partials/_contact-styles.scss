@@ -55,3 +55,9 @@ label {
 #contact a:hover {
     color: $white-grey;
 }
+
+// Regex validation styles
+
+input.notValid {
+    color: red !important;
+}
