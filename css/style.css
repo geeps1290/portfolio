@@ -258,6 +258,18 @@ strong {
   }
 }
 
+.banner-text span {
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translateY(50px);
+  display: inline-block;
+}
+
+.banner-text span.fade {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .icon-menu {
   box-sizing: border-box;
   display: block;
@@ -389,9 +401,11 @@ input[type=text], select, textarea {
   margin-top: 15px;
   margin-bottom: 25px;
   font-size: 1rem;
+  font-style: italic;
 }
 
 input[type=submit] {
+  display: inline-block;
   background-color: #3F678B;
   color: #b1b1bc;
   padding: 10px 20px;
@@ -415,6 +429,25 @@ label {
 
 #contact a:hover {
   color: #F1F1F1;
+}
+
+input.notValid {
+  color: #e84037 !important;
+  border: 0.1rem #e84037 solid;
+}
+
+.error {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 8px 10px 8px 8px;
+  border-radius: 2%;
+  color: #e84037;
+  font-style: italic;
+  background-color: rgba(241, 241, 241, 0.5);
+}
+
+input.required, textarea.required {
+  border: 0.1rem #e84037 solid;
 }
 
 #projects {

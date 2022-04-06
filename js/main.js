@@ -51,9 +51,48 @@ typewriter();
 
 // Get elements from the DOM
 const phone = document.getElementById('pnumber');
+const email = document.getElementById('eMail');
+const fname = document.getElementById('fname');
+const subject = document.getElementById('subject');
+const form = document.getElementById('form');
+const errorElement = document.getElementById('error');
+
+// ======= Required Fields ======= //
+
+let emptyFname = fname.value === '' || fname.value == null
+let emptyEmail = email.value === '' || email.value == null
+let emptySubject = subject.value === '' || subject.value == null
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (emptyFname == true) {
+    fname.classList.add("required")
+  }
+
+  if (emptyEmail == true) {
+    email.classList.add("required")
+  }
+
+  if (emptySubject == true) {
+    subject.classList.add("required")
+  }
+
+  if (emptyFname == true || emptyEmail == true || emptySubject == true) {
+    messages.push('*Please complete required fields')
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ')
+    errorElement.classList.add("error")
+  }
+})
+
+// ======= RegEx validation ======= //
 
 // Add event listener
 phone.addEventListener("blur", validatePhone);
+email.addEventListener("blur", validateEmail);
 
 function validatePhone() {
   const regEx_Phone = /^(0044|0|\+?44)[12378]\d{8,9}$/;
@@ -65,6 +104,20 @@ function validatePhone() {
   } else {
     phone.classList.remove("notValid");
     phone.classList.add("valid");
+    // console.log("valid");
+  }
+}
+
+function validateEmail() {
+  const regEx_Email = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z{2,5}])/;
+
+  if(!regEx_Email.test(email.value)) {
+    email.classList.add("notValid");
+    email.classList.remove("valid");
+    // console.log("not valid");
+  } else {
+    email.classList.remove("notValid");
+    email.classList.add("valid");
     // console.log("valid");
   }
 }

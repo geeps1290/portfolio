@@ -91,7 +91,7 @@
             <p>Please feel free to get in touch with me by <a href="mailto:georgina-pickworth@netmatters-scs.co.uk">email</a> or via the contact form below.</p>
 
             <div class="contact-form">
-                <form action="#">
+                <form action="#" id="form">
                 
                     <label for="fname">First name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your first name...">
@@ -100,15 +100,16 @@
                     <input type="text" id="lname" name="lastname" placeholder="Your last name...">
 
                     <label for="pnumber">Phone number</label>
-                    <input type="text" id="pnumber" name="pnumber" placeholder="Your phone number..." class="notValid">
+                    <input type="text" id="pnumber" name="pnumber" placeholder="Your phone number...">
 
-                    <label for="emailAd">Email</label>
-                    <input type="text" id="emailAd" name="emailAd" placeholder="Your email address...">
+                    <label for="eMail">Email</label>
+                    <input type="text" id="eMail" name="eMail" placeholder="Your email address...">
                 
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
                 
                     <input type="submit" value="Submit">
+                    <div id="error"></div>
                 
                 </form>
             </div>
