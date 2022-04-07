@@ -432,15 +432,14 @@ label {
 }
 
 input.notValid {
-  color: #e84037 !important;
   border: 0.1rem #e84037 solid;
 }
 
 .error {
-  display: inline-block;
-  margin-left: 1rem;
+  display: inline;
+  margin-left: 10px;
   padding: 8px 10px 8px 8px;
-  border-radius: 2%;
+  border-radius: 5px;
   color: #e84037;
   font-style: italic;
   background-color: rgba(241, 241, 241, 0.5);

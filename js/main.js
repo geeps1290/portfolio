@@ -59,40 +59,44 @@ const errorElement = document.getElementById('error');
 
 // ======= Required Fields ======= //
 
-let emptyFname = fname.value === '' || fname.value == null
-let emptyEmail = email.value === '' || email.value == null
-let emptySubject = subject.value === '' || subject.value == null
+//==== Method One ====//
 
-form.addEventListener('submit', (e) => {
-  let messages = []
-  if (emptyFname == true) {
-    fname.classList.add("required")
-  }
+// let emptyFname = fname.value === '' || fname.value == null
+// let emptyEmail = email.value === '' || email.value == null
+// let emptySubject = subject.value === '' || subject.value == null
 
-  if (emptyEmail == true) {
-    email.classList.add("required")
-  }
+// form.addEventListener('submit', (e) => {
+//   let messages = []
+//   if (emptyFname == true) {
+//     fname.classList.add("required")
+//   }
 
-  if (emptySubject == true) {
-    subject.classList.add("required")
-  }
+//   if (emptyEmail == true) {
+//     email.classList.add("required")
+//   }
 
-  if (emptyFname == true || emptyEmail == true || emptySubject == true) {
-    messages.push('*Please complete required fields')
-  }
+//   if (emptySubject == true) {
+//     subject.classList.add("required")
+//   }
 
-  if (messages.length > 0) {
-    e.preventDefault()
-    errorElement.innerText = messages.join(', ')
-    errorElement.classList.add("error")
-  }
-})
+//   if (emptyFname == true || emptyEmail == true || emptySubject == true) {
+//     messages.push('*Please complete required fields')
+//   }
+
+//   if (messages.length > 0) {
+//     e.preventDefault()
+//     errorElement.innerText = messages.join(', ')
+//     errorElement.classList.add("error")
+//   }
+// })
 
 // ======= RegEx validation ======= //
 
 // Add event listener
 phone.addEventListener("blur", validatePhone);
 email.addEventListener("blur", validateEmail);
+fname.addEventListener("blur", requiredName);
+email.addEventListener("blur", requiredEmail);
 
 function validatePhone() {
   const regEx_Phone = /^(0044|0|\+?44)[12378]\d{8,9}$/;
@@ -122,3 +126,6 @@ function validateEmail() {
   }
 }
 
+function requiredName() {
+
+}

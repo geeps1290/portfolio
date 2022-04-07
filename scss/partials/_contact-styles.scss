@@ -61,15 +61,14 @@ label {
 // Regex validation styles
 
 input.notValid {
-    color: $error-red !important;
     border: 0.1rem $error-red solid;
 }
 
 .error {
-    display: inline-block;
-    margin-left: 1rem;
+    display: inline;
+    margin-left: 10px;
     padding: 8px 10px 8px 8px;
-    border-radius: 2%;
+    border-radius: 5px;
     color: $error-red;
     font-style: italic;
     background-color: rgba(241,241,241, 0.5);
