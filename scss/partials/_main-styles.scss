@@ -1,5 +1,11 @@
 @use '../abstracts' as *;
 
+/* ======== Global styling =========*/
+
+* {
+    overscroll-behavior: none;
+}
+
 /* ======== Body styling =========*/
 
 body {

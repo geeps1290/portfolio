@@ -50,6 +50,11 @@
   content: "\eaca";
 }
 
+/* ======== Global styling =========*/
+* {
+  overscroll-behavior: none;
+}
+
 /* ======== Body styling =========*/
 body {
   box-sizing: border-box;
@@ -335,7 +340,20 @@ strong {
   padding: 6px 8px;
 }
 
-.nav-anchors a:first-child {
+#closebtn {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  padding: 6px 8px;
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  #closebtn {
+    display: none;
+  }
+}
+
+.nav-anchors #homenav {
   font-size: 50px;
   letter-spacing: 5px;
   padding: 25px 25px 55px 30px;
@@ -371,6 +389,58 @@ hr {
   padding: 0px 7px;
 }
 
+/* ---- Mobile menu ---- */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #3F678B;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  color: #fff;
+  padding: 50px 15px 15px;
+  font-size: 1.4rem;
+  display: block;
+  transition: all 0.3s ease 0s;
+  line-height: 0.5rem;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #82a2bf;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 #contact {
   display: block;
   position: relative;
@@ -431,12 +501,13 @@ label {
   color: #F1F1F1;
 }
 
-input.notValid {
+input.required, textarea.required {
   border: 0.1rem #e84037 solid;
 }
 
 .error {
-  display: inline;
+  display: inline-block;
+  margin-top: 20px;
   margin-left: 10px;
   padding: 8px 10px 8px 8px;
   border-radius: 5px;
@@ -444,8 +515,14 @@ input.notValid {
   font-style: italic;
   background-color: rgba(241, 241, 241, 0.5);
 }
+@media screen and (min-width: 660px) {
+  .error {
+    margin-top: auto;
+    display: inline;
+  }
+}
 
-input.required, textarea.required {
+input.notValid {
   border: 0.1rem #e84037 solid;
 }
 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-    
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +16,11 @@
     <title>Georgina Pickworth</title>
 
 </head>
-
 <body>
 
-    <div class="sidenav">
+    <div class="sidenav" id="sidenav">
         <div class="nav-anchors">
-            <a href="index.html">GP</a>
+            <a href="index.html" id="homenav">GP</a>
             <a href="about-me.html">About Me</a>
             <a href="index.html#projects">My Portfolio</a>
             <a href="code-examples.html">Code Examples</a>
@@ -50,11 +48,24 @@
                 <h1>My name is Georgina Pickworth</h1>
                 <p id="banner-tagline">I am a web developer</p>
             </div>
-            <div class="burger-menu">
-                <span class="icon-menu"></span>
-            </div>
         </div>
     </header>
+
+    <a class="burger-menu" onclick="openNav()">
+        <span class="icon-menu" id="icon-menu"></span>
+    </a>
+
+    <div id="mobile-menu" class="overlay">
+        <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html#top" id="homenav" onclick="closeNav()">Home</a>
+            <a href="about-me.html#navopen">About Me</a>
+            <a href="index.html#projects" onclick="closeNav()">My Portfolio</a>
+            <a href="code-examples.html#navopen">Code Examples</a>
+            <a href="scs-scheme.html#navopen">SCS Scheme</a>
+            <a href="index.html#contact" onclick="closeNav()">Contact Me</a>
+        </div>
+    </div>
 
     <div class="page-content">
         <div id="projects">
@@ -88,12 +99,12 @@
 
         <div id="contact">
             <h1>Contact me</h1>
-            <p>Please feel free to get in touch with me by <a href="mailto:georgina-pickworth@netmatters-scs.co.uk">email</a> or via the contact form below.</p>
+            <p>Please feel free to get in touch with me by <a href="mailto:georgina-pickworth@netmatters-scs.co.uk">email</a> or via the contact form below. Required fields are marked with an *.</p>
 
             <div class="contact-form">
                 <form action="#" id="form">
                 
-                    <label for="fname">First name</label>
+                    <label for="fname">First name*</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your first name...">
                 
                     <label for="lname">Last name</label>
@@ -102,10 +113,10 @@
                     <label for="pnumber">Phone number</label>
                     <input type="text" id="pnumber" name="pnumber" placeholder="Your phone number...">
 
-                    <label for="eMail">Email</label>
+                    <label for="eMail">Email*</label>
                     <input type="text" id="eMail" name="eMail" placeholder="Your email address...">
                 
-                    <label for="subject">Subject</label>
+                    <label for="subject">Subject*</label>
                     <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
                 
                     <input type="submit" value="Submit">
@@ -116,9 +127,7 @@
 
         </div>
     </div>
-
-
     <script src="js/main.js"></script>
+    <script src="js/validate.js"></script>
 </body>
-
 </html>

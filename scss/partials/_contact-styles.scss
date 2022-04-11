@@ -60,20 +60,25 @@ label {
 
 // Regex validation styles
 
-input.notValid {
+input.required, textarea.required {
     border: 0.1rem $error-red solid;
 }
 
 .error {
-    display: inline;
+    display: inline-block;
+    margin-top: 20px;
     margin-left: 10px;
     padding: 8px 10px 8px 8px;
     border-radius: 5px;
     color: $error-red;
     font-style: italic;
     background-color: rgba(241,241,241, 0.5);
+    @media screen and (min-width: 660px){
+        margin-top: auto;
+        display: inline;
+    }
 }
 
-input.required, textarea.required {
+input.notValid {
     border: 0.1rem $error-red solid;
 }

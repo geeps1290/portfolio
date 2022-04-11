@@ -22,7 +22,7 @@
 
     <div class="sidenav">
         <div class="nav-anchors">
-            <a href="index.html">GP</a>
+            <a href="index.html" id="homenav">GP</a>
             <a href="about-me.html">About Me</a>
             <a href="index.html#projects">My Portfolio</a>
             <a href="code-examples.html">Code Examples</a>
@@ -44,11 +44,23 @@
         </div>
     </div>
 
-    <div class="page-content">
-        <div class="burger-menu">
-            <span class="icon-menu"></span>
+    <div id="mobile-menu" class="overlay">
+        <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html#top#navopen" id="homenav">Home</a>
+            <a href="about-me.html#navopen">About Me</a>
+            <a href="index.html#projects#navopen">My Portfolio</a>
+            <a href="code-examples.html#navopen">Code Examples</a>
+            <a href="scs-scheme.html" onclick="closeNav()">SCS Scheme</a>
+            <a href="index.html#contact#navopen">Contact Me</a>
         </div>
+    </div>
 
+    <a class="burger-menu" onclick="openNav()">
+        <span class="icon-menu" id="icon-menu"></span>
+    </a>
+
+    <div class="page-content">
         <div class="about-section">
             <div class="heading">
                 <h1>Netmatters Scion Coalition Scheme (SCS)</h1>
@@ -79,6 +91,8 @@
             </div>
         </div>
     
+    <script src="js/main.js"></script>
+    <script src="js/validate.js"></script>
 </body>
 
 </html>

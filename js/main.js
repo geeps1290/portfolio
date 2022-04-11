@@ -1,20 +1,29 @@
-var i = 0;
-var txt = 'I am a web developer.'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+/* =======================
+    Banner Text Effect
+======================= */
 
-const bannerTagLine = document.getElementById("banner-tagline");
+// var i = 0;
+// var txt = 'I am a web developer.'; /* The text */
+// var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-function typewriter() {
-  if (i < txt.length) {
-    bannerTagLine.innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typewriter, speed);
-  }
-}
+// const bannerTagLine = document.getElementById("banner-tagline");
 
-bannerTagLine.innerText = "";
+// function typewriter() {
+//   if (i < txt.length) {
+//     bannerTagLine.innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typewriter, speed);
+//   }
+// }
 
-typewriter();
+// bannerTagLine.innerText = "";
+
+// typewriter();
+
+
+
+
+
 
 // const text = document.querySelector('#banner-tagline');
 // const strText = text.textContent;
@@ -45,87 +54,33 @@ typewriter();
 
 
 
-/* =====================
-    Form Validation
-===================== */
+/* =======================
+      Slide out menu
+======================= */
 
-// Get elements from the DOM
-const phone = document.getElementById('pnumber');
-const email = document.getElementById('eMail');
-const fname = document.getElementById('fname');
-const subject = document.getElementById('subject');
-const form = document.getElementById('form');
-const errorElement = document.getElementById('error');
-
-// ======= Required Fields ======= //
-
-//==== Method One ====//
-
-// let emptyFname = fname.value === '' || fname.value == null
-// let emptyEmail = email.value === '' || email.value == null
-// let emptySubject = subject.value === '' || subject.value == null
-
-// form.addEventListener('submit', (e) => {
-//   let messages = []
-//   if (emptyFname == true) {
-//     fname.classList.add("required")
-//   }
-
-//   if (emptyEmail == true) {
-//     email.classList.add("required")
-//   }
-
-//   if (emptySubject == true) {
-//     subject.classList.add("required")
-//   }
-
-//   if (emptyFname == true || emptyEmail == true || emptySubject == true) {
-//     messages.push('*Please complete required fields')
-//   }
-
-//   if (messages.length > 0) {
-//     e.preventDefault()
-//     errorElement.innerText = messages.join(', ')
-//     errorElement.classList.add("error")
-//   }
-// })
-
-// ======= RegEx validation ======= //
-
-// Add event listener
-phone.addEventListener("blur", validatePhone);
-email.addEventListener("blur", validateEmail);
-fname.addEventListener("blur", requiredName);
-email.addEventListener("blur", requiredEmail);
-
-function validatePhone() {
-  const regEx_Phone = /^(0044|0|\+?44)[12378]\d{8,9}$/;
-
-  if(!regEx_Phone.test(phone.value)) {
-    phone.classList.add("notValid");
-    phone.classList.remove("valid");
-    // console.log("not valid");
-  } else {
-    phone.classList.remove("notValid");
-    phone.classList.add("valid");
-    // console.log("valid");
-  }
+/* Open the sidenav */
+function openNav() {
+  document.getElementById("mobile-menu").style.width = "100%";
 }
 
-function validateEmail() {
-  const regEx_Email = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z{2,5}])/;
-
-  if(!regEx_Email.test(email.value)) {
-    email.classList.add("notValid");
-    email.classList.remove("valid");
-    // console.log("not valid");
-  } else {
-    email.classList.remove("notValid");
-    email.classList.add("valid");
-    // console.log("valid");
-  }
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mobile-menu").style.width = "0";
 }
 
-function requiredName() {
+/* ==== Have side nav already open then close ==== */
 
+var i = document.location.href.indexOf('#navopen')
+
+if (i != -1) {
+  // openNav();
+  document.querySelector(".overlay").style.transition = "";
+  document.getElementById("mobile-menu").style.width = "100%";
+  document.querySelector(".overlay").style.transition = "all 0.5s ease 0s";
+  let newUrl = window.location.href.substring(0, i);
+  window.history.replaceState(undefined, "", newUrl);
 }
+
+window.addEventListener('load', function() {
+  window.setTimeout(closeNav, 600)
+})
