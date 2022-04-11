@@ -22,7 +22,7 @@
     position: relative;
     margin: 200px 20px 0;
     width: auto;
-    height: auto;
+    min-height: 300px;
     padding: 20px;
     background-color: rgba(206,209,215,0.3);
     text-shadow: 1px 1px 2px $darkest-grey;
@@ -31,6 +31,7 @@
         width: 100%;
         width: -webkit-fill-available;
         width: -moz-available;
+        min-height: 200px;
     }
 }
 

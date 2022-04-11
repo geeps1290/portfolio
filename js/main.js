@@ -2,57 +2,52 @@
     Banner Text Effect
 ======================= */
 
-// var i = 0;
-// var txt = 'I am a web developer.'; /* The text */
-// var speed = 50; /* The speed/duration of the effect in milliseconds */
+const textDisplay = document.getElementById("banner-tagline");
+const phrases = [' I am a trainee web developer. ', ' I live in Bristol, UK. ', ' I am open to work. '];
+let k = 0;
+let l = 0;
+let currentPhrase = [];
+let isDeleting = false;
+let isEnd = false;
 
-// const bannerTagLine = document.getElementById("banner-tagline");
+function loop() {
+  isEnd = false;
+  textDisplay.innerHTML = currentPhrase.join('');
 
-// function typewriter() {
-//   if (i < txt.length) {
-//     bannerTagLine.innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typewriter, speed);
-//   }
-// }
+  if (k < phrases.length){
 
-// bannerTagLine.innerText = "";
+    if (!isDeleting && l <= phrases[k].length) {
+      currentPhrase.push(phrases[k][l]);
+      l++;
+    }
 
-// typewriter();
+    if (isDeleting && l <= phrases[k].length) {
+      currentPhrase.pop(phrases[k][l]);
+      l--;
+    }
 
+    if (l == phrases[k].length){
+      isEnd = true;
+      isDeleting = true;
+    }
 
+    if (isDeleting && l === 0) {
+      currentPhrase = [];
+      isDeleting = false;
+      k++;
+      if (k == phrases.length) {
+        k = 0;
+      }
+    }
 
+  }
+  const spedUp = Math.random() * (50 -30) + 30;
+  const normalSpeed = Math.random() * (100 -80) + 80;
+  const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed; 
+  setTimeout(loop, time);
+}
 
-
-
-// const text = document.querySelector('#banner-tagline');
-// const strText = text.textContent;
-// const splitText = strText.split("");
-// text.textContent = "";
-
-// for (let i = 0; i < splitText.length; i++) {
-//   text.innerHTML = "<span>" + splitText[i] + "</span>";
-// }
-
-// let char = 0;
-// let timer = setInterval(onTick, 50);
-
-// function onTick () {
-//   const span = text.querySelectorAll('span')[char];
-//   span.classList.add('fade');
-//   char++;
-//   if (char === splitText.length){
-//     complete();
-//     return;
-//   }
-// }
-
-// function complete() {
-//   clearInterval(timer);
-//   timer = null;
-// }
-
-
+loop();
 
 /* =======================
       Slide out menu
