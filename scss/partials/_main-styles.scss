@@ -1,0 +1,140 @@
+@use '../abstracts' as *;
+
+/* ======== Global styling =========*/
+
+* {
+    overscroll-behavior: none;
+}
+
+/* ======== Body styling =========*/
+
+body {
+    box-sizing: border-box;
+    display: block;
+    width: auto;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.4rem;
+    background-color: $white-grey;
+}
+
+h1 {
+    display: block;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: $darkest-grey;
+    text-transform: uppercase;
+    @media screen and (max-width: $small) {
+        font-size: 8vw;
+        line-height: 2.6rem;
+    }
+}
+
+h2 {
+    display: block;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px $mid-grey;
+}
+
+h3 {
+    display: block;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+}
+
+h4 {
+    display: block;
+    font-weight: 400;
+    color: $darkest-grey;
+    text-shadow: 0.7px 0.7px 0.7px $mid-grey;
+
+}
+
+p {
+    display: block;
+    font-weight: 300;
+    line-height: 2rem;
+    color: $darkest-grey;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: $slate-blue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $light-blue;
+    cursor: pointer;
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    @media screen and (min-width: $small) {
+        width: 100%;
+        position: relative;
+    }
+}
+
+ul {
+    list-style: circle outside none;
+    color: $darkest-grey;
+    padding-left: 10px;
+  }
+
+
+strong {
+    display: block;
+    font-weight: 600;
+    color: black;
+    color: $darkest-grey;
+    font-style: normal;
+    @media screen and (max-width: $small) {
+        font-size: 5vw;
+    }
+}
+
+.page-content {
+    display: block;
+    width: 100%;
+    top: 0;
+    @media screen and (min-width: $small) {
+        width: calc(100vw - 160px);
+        position: relative;
+        left: 160px;
+    }
+}
+
+.heading {
+    box-sizing: border-box;
+    background-color: rgb(130, 162, 191);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px inset, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px inset;
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+}
+
+.heading h1, .heading p {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(24, 27, 35) 1px 1px 2px;
+}
+
+.banner-text p {
+    @media screen and (max-width: $small) {
+        font-size: 5vw;
+    }
+}
+
+/* ======== Media Queries =========*/
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

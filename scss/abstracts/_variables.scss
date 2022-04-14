@@ -1,0 +1,20 @@
+/* ======== Page colors ======== */
+
+$darkest-grey: #181B23;
+$mid-grey: #939396;
+$light-grey: #b1b1bc;
+$white-grey: #F1F1F1;
+$sand: #A28870;
+$green: #37452E;
+$slate-blue: #3F678B;
+$light-blue: #82a2bf;
+$error-red: #e84037;
+
+/* ======== Viewport widths ======== */
+
+/* XS: no media queries as this is default when developing (mobile first, aim to make sure this works from 280px and above)*/
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;

@@ -1,0 +1,65 @@
+@use '../abstracts' as *;
+
+.coding-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    box-shadow: inset 0 4px 8px 0 rgb(0 0 0 / 20%), inset 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.coding-card {
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 8px;
+    padding: 0;
+    margin: 60px 10px 20px;
+    max-width: 500px;
+    // @media screen and (max-width: $small){
+    //     max-width: 80vw;
+    // }
+    @media screen and (max-width: 1085px) {
+        margin: 60px 20px 20px;
+    }
+}
+
+// .coding-card:hover {
+//     background-color: $light-blue;
+// }
+
+// .coding-card:hover h3 {
+//     color: #fff;
+// }
+
+.coding-card img {
+    width: 100%;
+    margin: 20px auto 0;
+}
+
+.card-header {
+    padding: 30px 20px 10px;
+    background-color: $light-blue;
+    line-height: 0.7rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-header h2 {
+    color: $darkest-grey;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    margin: 40px auto 20px;
+    text-shadow: none;
+    font-weight: 300;
+}
+
+.card-header h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.card-content {
+    padding: 20px 20px 30px;
+}

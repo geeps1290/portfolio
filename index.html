@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,200&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Georgina Pickworth</title>
+
+</head>
+<body>
+
+    <div class="sidenav" id="sidenav">
+        <div class="nav-anchors">
+            <a href="index.html" id="homenav">GP</a>
+            <a href="about-me.html">About Me</a>
+            <a href="index.html#projects">My Portfolio</a>
+            <a href="code-examples.html">Code Examples</a>
+            <a href="scs-scheme.html">SCS Scheme</a>
+            <a href="index.html#contact">Contact Me</a>
+        </div>
+
+        <div class="white-line">
+            <hr color="#CED1D7" style="height: 0.1px;" width="50%">
+        </div>
+
+        <div class="socials">
+            <a href="https://github.com/geeps1290" target="_blank">
+                <span class="icon-github"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/georgina-pickworth/" target="_blank">
+                <span class="icon-linkedin2"></span>
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <div class="banner">
+            <div class="banner-text">
+                <div id="banner-heading">
+                    <h1>My name is Georgina Pickworth</h1>
+                </div>
+                <div id="banner-phrase">
+                    <p id="banner-tagline">I am a web developer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <a class="burger-menu" onclick="openNav()">
+        <span class="icon-menu" id="icon-menu"></span>
+    </a>
+
+    <div id="mobile-menu" class="overlay close" href="javascript:void(0)" onclick="closeNav()">
+        <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html#top" id="homenav" onclick="closeNav()">Home</a>
+            <a href="about-me.html#navopen">About Me</a>
+            <a href="index.html#projects" onclick="closeNav()">My Portfolio</a>
+            <a href="code-examples.html#navopen">Code Examples</a>
+            <a href="scs-scheme.html#navopen">SCS Scheme</a>
+            <a href="index.html#contact" onclick="closeNav()">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div id="projects">
+            <h1>Projects</h1>
+            <p>This is a showcase of my coding projects to date...</p>
+
+            <div class="projects-container">
+                <a href="#">
+                    <div class="projects-card">
+                        <img src="https://placeimg.com/280/180/tech" alt="tech">
+                        <h3>Project 1</h3>
+                        <p>This card showcases a project.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="projects-card">
+                        <img src="https://placeimg.com/280/180/arch" alt="architecture">
+                        <h3>Project 2</h3>
+                        <p>This card showcases a project.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="projects-card">
+                        <img src="https://placeimg.com/280/180/nature" alt="nature">
+                        <h3>Project 3</h3>
+                        <p>This card showcases a project.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h1>Contact me</h1>
+            <p>Please feel free to get in touch with me by <a href="mailto:georgina-pickworth@netmatters-scs.co.uk">email</a> or via the contact form below. Required fields are marked with an *.</p>
+
+            <div class="contact-form">
+                <form action="#" id="form">
+                
+                    <label for="fname">First name*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+                    <label for="pnumber">Phone number (UK numbers only)</label>
+                    <input type="text" id="pnumber" name="pnumber" placeholder="Your phone number...">
+
+                    <label for="eMail">Email*</label>
+                    <input type="text" id="eMail" name="eMail" placeholder="Your email address...">
+                
+                    <label for="subject">Subject*</label>
+                    <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                    <div id="error"></div>
+                
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/banner.js"></script>
+</body>
+</html>
