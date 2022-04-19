@@ -25,8 +25,8 @@ input[type=text], select, textarea {
     padding: 20px;
     border: 1px solid $light-blue;
     border-radius: 5px;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 1rem;
     font-style: italic;
 }
@@ -47,7 +47,10 @@ input[type=submit]:hover {
 }
 
 label {
+    display: block;
     font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 #contact a {
@@ -58,27 +61,34 @@ label {
     color: $white-grey;
 }
 
+.submit {
+    margin-top: 20px;
+}
+
 // Regex validation styles
 
 input.required, textarea.required {
     border: 0.1rem $error-red solid;
 }
 
-.error {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 10px;
-    padding: 8px 10px 8px 8px;
-    border-radius: 5px;
-    color: $error-red;
-    font-style: italic;
-    background-color: rgba(241,241,241, 0.5);
-    @media screen and (min-width: 660px){
-        margin-top: auto;
-        display: inline;
-    }
+input.notValid, textarea.notValid {
+    border: 0.1rem $error-red solid;
 }
 
-input.notValid {
-    border: 0.1rem $error-red solid;
+.error-hint {
+    color: red;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.thank-you {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 50px;
+    font-style: italic;
+    background-color: rgba(241,241,241, 0.5);
+}
+
+.hidden {
+    display: none;
 }

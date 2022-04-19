@@ -109,24 +109,31 @@
                 <form action="#" id="form">
                 
                     <label for="fname">First name*</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name..."/>
+                    <div class="error-hint hidden">Please enter your name.</div>
                 
                     <label for="lname">Last name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..."/>
 
                     <label for="pnumber">Phone number (UK numbers only)</label>
-                    <input type="text" id="pnumber" name="pnumber" placeholder="Your phone number...">
+                    <input type="text" id="pnumber" name="pnumber" placeholder="Your phone number..."/>
+                    <div class="error-hint hidden">Please enter a valid UK phone number.</div>
 
                     <label for="eMail">Email*</label>
-                    <input type="text" id="eMail" name="eMail" placeholder="Your email address...">
+                    <input type="text" id="eMail" name="eMail" placeholder="Your email address..."/>
+                    <div class="error-hint hidden">Please enter a valid email address.</div>
                 
                     <label for="subject">Subject*</label>
-                    <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+                    <textarea class="" id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+                    <div class="error-hint hidden">Please enter a message.</div>
                 
-                    <input type="submit" value="Submit">
+                    <input class="submit" type="submit" value="Submit">
                     <div id="error"></div>
                 
                 </form>
+                <div class="thank-you hidden">
+                    Thank you for your message.
+                </div>
             </div>
 
         </div>
