@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Georgina Pickworth</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
 <body>
@@ -45,11 +46,13 @@
     <header>
         <div class="banner">
             <div class="banner-text">
-                <div id="banner-heading">
-                    <h1>My name is Georgina Pickworth</h1>
-                </div>
-                <div id="banner-phrase">
-                    <p id="banner-tagline">I am a web developer</p>
+                <div class="max-width">
+                    <div id="banner-heading">
+                        <h1>My name is Georgina Pickworth</h1>
+                    </div>
+                    <div id="banner-phrase">
+                        <p id="banner-tagline">I am a web developer</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,69 +76,72 @@
 
     <div class="page-content">
         <div id="projects">
-            <h1>Projects</h1>
-            <p>This is a showcase of my coding projects to date...</p>
+            <div class="max-width">
+                <h1>Projects</h1>
+                <p>This is a showcase of my coding projects to date...</p>
 
-            <div class="projects-container">
-                <a href="#">
-                    <div class="projects-card">
-                        <img src="https://placeimg.com/280/180/tech" alt="tech">
-                        <h3>Project 1</h3>
-                        <p>This card showcases a project.</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="projects-card">
-                        <img src="https://placeimg.com/280/180/arch" alt="architecture">
-                        <h3>Project 2</h3>
-                        <p>This card showcases a project.</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="projects-card">
-                        <img src="https://placeimg.com/280/180/nature" alt="nature">
-                        <h3>Project 3</h3>
-                        <p>This card showcases a project.</p>
-                    </div>
-                </a>
+                <div class="projects-container">
+                    <a href="#">
+                        <div class="projects-card">
+                            <img src="https://placeimg.com/280/180/tech" alt="tech">
+                            <h3>Project 1</h3>
+                            <p>This card showcases a project.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="projects-card">
+                            <img src="https://placeimg.com/280/180/arch" alt="architecture">
+                            <h3>Project 2</h3>
+                            <p>This card showcases a project.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="projects-card">
+                            <img src="https://placeimg.com/280/180/nature" alt="nature">
+                            <h3>Project 3</h3>
+                            <p>This card showcases a project.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
         <div id="contact">
-            <h1>Contact me</h1>
-            <p>Please feel free to get in touch with me by <a href="mailto:georgina-pickworth@netmatters-scs.co.uk">email</a> or via the contact form below. Required fields are marked with an *.</p>
+            <div class="max-width">
+                <h1>Contact me</h1>
+                <p>Please feel free to get in touch with me by <a href="mailto:georgina-pickworth@netmatters-scs.co.uk">email</a> or via the contact form below. Required fields are marked with an *.</p>
 
-            <div class="contact-form">
-                <form action="#" id="form">
-                
-                    <label for="fname">First name*</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name..."/>
-                    <div class="error-hint hidden">Please enter your name.</div>
-                
-                    <label for="lname">Last name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..."/>
+                <div class="contact-form">
+                    <form action="#" id="form">
+                    
+                        <label for="fname">First name*</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name..."/>
+                        <div class="error-hint hidden">Please enter your name.</div>
+                    
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..."/>
 
-                    <label for="pnumber">Phone number (UK numbers only)</label>
-                    <input type="text" id="pnumber" name="pnumber" placeholder="Your phone number..."/>
-                    <div class="error-hint hidden">Please enter a valid UK phone number.</div>
+                        <label for="pnumber">Phone number (UK numbers only)</label>
+                        <input type="text" id="pnumber" name="pnumber" placeholder="Your phone number..."/>
+                        <div class="error-hint hidden">Please enter a valid UK phone number.</div>
 
-                    <label for="eMail">Email*</label>
-                    <input type="text" id="eMail" name="eMail" placeholder="Your email address..."/>
-                    <div class="error-hint hidden">Please enter a valid email address.</div>
-                
-                    <label for="subject">Subject*</label>
-                    <textarea class="" id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
-                    <div class="error-hint hidden">Please enter a message.</div>
-                
-                    <input class="submit" type="submit" value="Submit">
-                    <div id="error"></div>
-                
-                </form>
-                <div class="thank-you hidden">
-                    Thank you for your message.
+                        <label for="eMail">Email*</label>
+                        <input type="text" id="eMail" name="eMail" placeholder="Your email address..."/>
+                        <div class="error-hint hidden">Please enter a valid email address.</div>
+                    
+                        <label for="subject">Subject*</label>
+                        <textarea class="" id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+                        <div class="error-hint hidden">Please enter a message.</div>
+                    
+                        <input class="submit" type="submit" value="Submit">
+                        <div id="error"></div>
+                    
+                    </form>
+                    <div class="thank-you hidden">
+                        Thank you for your message.
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
     <script src="js/main.js"></script>

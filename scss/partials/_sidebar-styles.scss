@@ -5,7 +5,7 @@
     @media screen and (min-width: $small) {
         display: block;
         height: 100%;
-        width: 160px;
+        width: $sidebar-width;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -31,7 +31,7 @@
 .nav-anchors a {
     display: block;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     padding: 6px 8px;
 }
 

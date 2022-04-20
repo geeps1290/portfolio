@@ -161,9 +161,19 @@ strong {
 }
 @media screen and (min-width: 576px) {
   .page-content {
-    width: calc(100vw - 160px);
+    width: calc(100vw - 180px);
     position: relative;
-    left: 160px;
+    left: 180px;
+  }
+}
+
+.max-width {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 992px) {
+  .max-width {
+    max-width: 1800px;
   }
 }
 
@@ -209,8 +219,8 @@ strong {
 }
 @media screen and (min-width: 576px) {
   .banner {
-    margin-left: 160px;
-    width: calc(100% - 160px);
+    margin-left: 180px;
+    width: calc(100% - 180px);
   }
 }
 
@@ -311,7 +321,7 @@ strong {
   .sidenav {
     display: block;
     height: 100%;
-    width: 160px;
+    width: 180px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -337,7 +347,7 @@ strong {
 .nav-anchors a {
   display: block;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   padding: 6px 8px;
 }
 
@@ -460,6 +470,9 @@ hr {
 @media screen and (min-width: 576px) {
   .contact-form {
     padding: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

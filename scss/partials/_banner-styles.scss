@@ -10,8 +10,8 @@
     background: url(../images/cornwall.jpg) no-repeat center / cover fixed, linear-gradient(to bottom right, $slate-blue, $darkest-grey);
     background-blend-mode: normal;
     @media screen and (min-width: $small) {
-        margin-left: 160px;
-        width: calc(100% - 160px);
+        margin-left: $sidebar-width;
+        width: calc(100% - $sidebar-width);
     }
 }
 
